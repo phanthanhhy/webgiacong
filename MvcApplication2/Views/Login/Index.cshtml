@@ -1,0 +1,227 @@
+﻿@model MvcApplication2.Models.CauHinh
+@{
+    //ViewBag.Title = "Index.cshtml";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    @* dua len web thi chay lai duong dan tren *@
+<base href="./" />
+
+<title>CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT</title>
+@*<meta name="description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..."/>
+<link rel="canonical" href="https://vietson.com.vn/" />
+<meta name="keywords" content=""/>*@
+<meta name="author" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" name="generator" />
+<meta content="index,follow" name="googlebot" />
+<meta name="copyright" content="Copyright Â© 2018 CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="geo.placename" content="291 Hoàng Sa - Tân Định - Quận 1 - TPHCM" />
+<meta name="geo.region" content="VN - HCM" />
+<meta name="geo.position" content="10.819206,106.633778" />
+<meta name="ICBM" content="10.819206,106.633778" />
+<meta name="DC.title" lang="vi" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta name="DC.creator" content="Phan Thanh Hy" />
+<meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="Sat, 11 Jul 2020 13:36:00 +0700" />
+<meta name="DC.identifier" scheme="DCTERMS.URI" content="" />
+<link rel="DCTERMS.replaces" hreflang="vi" href="" />
+<meta name="DCTERMS.abstract" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" />
+<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta property="og:description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:title" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT">
+<meta name="twitter:description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,...">
+<meta name="twitter:image" content="">
+@*<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>*@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="~/Ases/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Ases/styles/owl-carousel.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/jquery.fancybox.min.css">
+<link href="~/Ases/styles/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/slick.css"/>
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/slick-theme.css"/>
+
+<link href="~/Ases/styles/main.css" rel="stylesheet" type="text/css" />
+<link href="~/Ases/styles/menu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="~/Ases/js/jquery.js"></script>
+<script type="text/javascript" src="~/Ases/js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="~/Ases/js/flaunt.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130206550-1"></script>
+
+
+
+  <meta name="viewport" content="width=device-width"/>
+  <title>Login</title>
+  <style>
+      html {
+        height: 100%;
+        }
+
+     body {
+        height: 100%;
+        position: relative;
+        }
+
+      #login-div
+      {
+      position:absolute;
+      left:40%;
+      top:40%;
+      border:1px solid #ccc;
+      padding:10px 10px;
+      }
+      #header {
+        background:url(../Images/bg-header_Moi.png) no-repeat;
+        /*top center;*/
+	    height:130px;
+	    position:relative;
+	    top:0;
+	    z-index:999;
+    }
+      #GachChan {
+          background:url(../Images/button-tin-tuc.png) no-repeat;
+      }
+      #footerlogin {
+          width:100%;
+          /*height:20%;*/
+          position:absolute;
+          bottom: 0;
+      }
+      
+  </style>
+</head>
+
+@*<body style="background:url(../Images/HinhNen.png)">*@
+<body>
+    <header id="header">
+	    <div class="container">
+		    <div class="headertop">
+			    <div class=" headertop-i headertop-r">
+				    <div class="hotline-s">CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Địa chỉ: 291 Hoàng Sa - Tân Định - Quận 1 - TPHCM
+				    </div>
+			    </div>
+			    @*<div class="baogiaheader"><a type="button" data-toggle="modal" data-target="#Yeucaubaogiahea">Tài khoản: @Session["nvUser"]</a></div>
+			    <div class="icon-language">
+				    <a href="">Vietnamese </a>
+				    <a href="">English</a>
+			    </div>*@
+		    </div>
+	    </div>
+	    <div class="container">
+		    <div class="row">
+			    @*<div class="col-md-2 logo"><a href=""><img src="~/Images/Logo.png" /></a></div>*@
+                <div class="col-md-2 logo"><a href="https://vietsteel.com/"><img src="~/Images/logo-vietsteel-3.png" /></a></div>
+                @*<div><img src="~/Images/logo-vietsteel-3.png" width="147px" height="78px"/></div>*@
+			    <div class="col-md-10">
+				    <div class="menuheader">
+					    <nav class="nav">
+						    <ul class="nav-list">
+							    <li class="nav-item"><a class="active" href="./" title="Trang chủ">Trang chủ</a></li>
+							    <li class="nav-item"><a  href="https://vietsteel.com/vi/about-us/" title="Giới thiệu">Giới thiệu</a></li>
+							    <li class="nav-item"><a  href="@Url.Action("Index","Home")" title="Gia công">Gia công </a></li>
+							    <li class="nav-item"><a  href="https://vietsteel.com/vi/contact-us/" title="Dịch vụ">Liên hệ</a>
+							    </li>
+							    </ul>
+					    </nav>
+				
+				    </div>
+			    </div>
+			
+			
+		    </div>
+		
+	    </div>
+    </header>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div style="text-align:center; font-size:30px;font-style:italic;color:blue">CHÀO MỪNG BẠN ĐẾN VỚI HỆ THỐNG QUẢN LÝ SẢN XUẤT THÉP VIỆT</div>
+    <div id ="login-div">
+            @using (Html.BeginForm("Authorise","Login",FormMethod.Post))
+            {
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td style="text-decoration:underline">Login</td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(Model => Model.nvUser)</td>
+                            <td>@Html.EditorFor(Model => Model.nvUser)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                @Html.ValidationMessageFor(Model => Model.nvUser)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>@Html.LabelFor(Model => Model.nvPass)</td>
+                            <td>@Html.EditorFor(Model => Model.nvPass)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                @Html.ValidationMessageFor(Model => Model.nvPass)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="field-validation-error">@Html.DisplayFor(Model =>Model.LoginErrorMgs)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <input type="submit" value="Login"/>
+                                <input type="reset" value="Clear"/>
+                            </td>
+                        </tr>
+                    </table>
+            }
+            <script src="~/Scripts/jquery-1.8.0.min.js"></script>
+            <script src="~/Scripts/jquery.validate.min.js"></script>
+            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+        </div>
+    <footer id="footerlogin">
+	    <div class="footer-bg"></div>
+	    <div class="container">
+		   				
+		    <div class="row">
+			    <div class="col-xs-12 col-sm-3 col-md-6 footer-row">
+				    <div class="footer-brief">
+					    Công ty TNHH Máy Và Sản Phẩm Vietsteel được thành lập năm 1998. Chúng tôi là chuyên gia hàng đầu tại Việt Nam trong việc thiết kế, chế tạo, lắp đặt tất cả các loại máy cán, uốn, cắt, và đột dập, vv..
+				    </div>
+			    </div>
+			
+			    <div class="col-xs-12 col-sm-6 col-md-6 footer-row1">
+					    <div class="footer-title">Quản lý gia công Thép Việt</div>
+					    <div class="foo-info">
+						    <p class="foo-address">Được viết bởi phòng IT</p>
+					    </div>
+			    </div>
+			
+		    </div>
+	    </div>
+    </footer>
+</body>
+</html>

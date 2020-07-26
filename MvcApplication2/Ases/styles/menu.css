@@ -1,0 +1,676 @@
+.nav {
+	position:relative;
+	font-size:14px;
+	padding:0px 0px;
+	text-align:right;
+	float:right;
+	margin-top:14px;
+	padding-left:20px;
+}
+.cate_title .nav{ float:none;}
+.nav ul{ margin:0px; padding:0px; list-style:none;}
+.nav-list {
+	text-align:left;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+}
+.nav-item a {
+	display:block;
+	color:#049e75;
+	padding:16px 15px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-bottom: 5px solid transparent;
+}
+.nav-item > a:hover, .nav-item > a.current{
+	color:#FF432E;
+
+}
+.nav-list li:hover > a,
+.nav-list li.current > a {
+	color:#FF432E;
+}
+.nav-item a.active{
+	border-bottom:5px solid #FF432E;
+	color:#FF432E;
+}
+
+.nav-item:hover .nav-submenu {
+	display:block;
+	z-index:9999;
+}
+.nav-submenu-item:hover .nav1-submenu {
+	display:block;
+	z-index:9999;
+	margin-left:100%;
+}
+/* Navigation submenu */
+.nav-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:280px;
+}
+.nav1-submenu {
+	display:none;
+	position:absolute;
+	left:0;
+	width:280px;
+	top:0px;
+}
+.nav-submenu-item{position:relative; }
+.nav-submenu-item a {
+	background:#fff;
+	border-bottom:1px solid #C0C0C0;
+	display:block;
+	padding:15px;
+	border-right:none;
+	text-transform:none;
+	color:#000000;
+	font-weight:500;
+}
+.nav-submenu-item a h2{ font-weight:500;}
+.nav-submenu-item a:hover {
+	color:#FF0000;
+}
+/* Mobile navigation */
+.nav-mobile {
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	top:-55px;
+	right:0px;
+	background:#222 url(../images/nav.svg) no-repeat center center;
+	height:40px;
+	width:40px;
+	background-size:16px;
+}
+/* Mobile navigation, clickable area for revealing <ul> */
+.nav-click {
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	border-left:1px solid #ccc;
+	height:46px;
+	width:50px;
+	cursor:pointer;
+}
+.nav-click i {
+	display:block;
+	height:48px;
+	width:48px;
+	background:url(../images/drop.svg) no-repeat center center;
+	background-size:20px;
+}
+.nav-click:hover {
+	background-color:#C0C0C0;
+}
+.nav-rotate {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.logomobi, .searchmobi, .footercall, .giacongbox_mobi{
+	display:none;
+}
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+@media only screen and (max-width:1024px){
+	.nav-item a {
+		padding:15px 5px;
+		font-size:13px;
+	}
+}
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+	.headertop-i, .searchhome, .mainright, .headerFlowus, .baogiaheader{ display:none;}
+	.headertop {
+		padding-left: 0px;
+	}
+	.icon-language {
+		top: 25px;
+		right:50px;
+	}
+	header{
+		background-color:#1b778c;
+		background-image:none;
+		height:65px;
+	}
+	.logo{ text-align:left; margin-top:15px; }
+	.logo img{ height:40px;  }
+	
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+		background:#049e75;
+		border-bottom:1px solid #ccc;
+		border-right:none;
+		color:#fff;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	.nav-submenu-item { float:none;}
+	.nav-submenu-item a { background:#049e75; border-bottom:1px solid #ccc; color:#fff; padding:15px;}
+	.nav-item a.active {
+		border-bottom:1px solid #ccc;
+		color: #fff;
+	}
+
+	.banner{ display:inline-block; width:100%;}
+	.about-cty {
+		float: none;
+		width: 100%;
+		margin-top:30px;
+	}
+	.title-about1{
+		float: none;
+		width: 100%;
+	}
+	.about-img{ margin-top:30px; }
+	/*.title-about h5 {
+		font-size: 5vw;
+	}
+	.about-cty .about-cty-n {
+		font-size: 5vw;
+	}*/
+	.about-img iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.footer-row1{ padding-top:40px;}
+	.chetaohome-bottom-box{ margin-bottom:30px; }
+	.chatluonghome {
+		padding: 50px 0px;
+	}
+	.chatluonghome-title:before {
+		width: 100%;
+		height: 2px;
+		top: 80px;
+		left:0px;
+	}
+	.chatluonghome-title {
+		font-size: 24px;
+	}
+	.chatluonghome-2 {
+		font-size: 30px;
+	}
+	.duan-item{ height:100%; }
+	.title-thietkehome span {
+		font-size: 26px;
+	}
+	.title-thietkehome:before {
+		height: 40px;
+	}
+	.cacdongmay-bg {
+		height: 30px;
+		top: -15px;
+		left: 0px;
+	}
+	.margin-top .wrapper__inner {
+		padding: 0em 0em 5em;
+	}
+	.title1-chetaohome h5 {
+		font-size:25px;
+	}
+	.title1-chetaohome:before {
+		height: 45px;
+		top: 0px;
+	}
+	.heightbg {
+		height: 20px;
+		margin-top: -10px;
+	}
+	.about-note {
+		width: 100%;
+	}
+	.title-name .title-ine {
+		padding: 0px 20px 0px 20px;
+	}
+	.h1category {
+		font-size:6vw;
+	}
+	.contentdetail{ margin-top:20px; }
+	.fixed {
+		width: 92%!important;
+	}
+	.vietsteel-item {
+		height: 100%;
+		margin-bottom:20px;
+	}
+	.xemthem-news {
+		padding-top: 30px;
+	}
+	.doitac-col{ text-align:center; }
+	.title-about h5{
+		font-size:30px;
+	}
+	.maspgoogle iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.contact-tt{ margin-top:20px; }
+	.heightbg1 {
+		background:#ff0000;
+		width: 100%;
+		position: relative;
+		height: 6px;
+		margin-top: 0px;
+	}
+	.footercall{ display:block; }
+	.footercall  a{ margin-top:5px; float:left; text-decoration:none;}
+	.giacongbox_ctl{ display:none; }
+	.giacongbox_mobi{ display:block; }
+	.title-thietkehome, .title-thietkehome1{ display:block; float:none;}
+	.more-xem a{text-decoration:none; color:#000; }
+	.more-xem{ text-align:center; }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.headertop-i, .searchhome, .mainright, .headerFlowus, .baogiaheader{ display:none;}
+	.headertop {
+		padding-left: 0px;
+	}
+	.icon-language {
+		top: 25px;
+		right:50px;
+	}
+	header{
+		background-color:#1b778c;
+		background-image:none;
+		height:65px;
+	}
+	.logo{ text-align:left; margin-top:15px; }
+	.logo img{ height:40px;  }
+	
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+		background:#049e75;
+		border-bottom:1px solid #ccc;
+		border-right:none;
+		color:#fff;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	.nav-submenu-item { float:none;}
+	.nav-submenu-item a { background:#049e75; border-bottom:1px solid #ccc; color:#fff; padding:15px;}
+	.nav-item a.active {
+		border-bottom:1px solid #ccc;
+		color: #fff;
+	}
+
+	.banner{ display:inline-block; width:100%;}
+	.about-cty {
+		float: none;
+		width: 100%;
+		margin-top:30px;
+	}
+	.title-about1{
+		float: none;
+		width: 100%;
+	}
+	.about-img{ margin-top:30px; }
+	/*.title-about h5 {
+		font-size: 5vw;
+	}
+	.about-cty .about-cty-n {
+		font-size: 5vw;
+	}*/
+	.about-img iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.footer-row1{ padding-top:40px;}
+	.chetaohome-bottom-box{ margin-bottom:30px; }
+	.chatluonghome {
+		padding: 50px 0px;
+	}
+	.chatluonghome-title:before {
+		width: 100%;
+		height: 2px;
+		top: 50px;
+		left:0px;
+	}
+	.chatluonghome-title {
+		font-size: 24px;
+	}
+	.chatluonghome-2 {
+		font-size: 30px;
+	}
+	.duan-item{ height:100%; }
+	.title-thietkehome span {
+		font-size: 26px;
+	}
+	.title-thietkehome:before {
+		height: 40px;
+	}
+	.cacdongmay-bg {
+		height: 30px;
+		top: -15px;
+		left: 0px;
+	}
+	.margin-top .wrapper__inner {
+		padding: 0em 0em 5em;
+	}
+	.title1-chetaohome h5 {
+		font-size:25px;
+	}
+	.title1-chetaohome:before {
+		height: 45px;
+		top: 0px;
+	}
+	.heightbg {
+		height: 20px;
+		margin-top: -10px;
+	}
+	.about-note {
+		width: 100%;
+	}
+	.title-name .title-ine {
+		padding: 0px 20px 0px 20px;
+	}
+	.h1category {
+		font-size:6vw;
+	}
+	.contentdetail{ margin-top:20px; }
+	.fixed {
+		width: 92%!important;
+	}
+	.vietsteel-item {
+		height: 100%;
+		margin-bottom:20px;
+	}
+	.xemthem-news {
+		padding-top: 30px;
+	}
+	.doitac-col{ text-align:center; float:left; width:50%; height:220px; }
+	.title-about h5{
+		font-size:30px;
+	}
+	.maspgoogle iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.contact-tt{ margin-top:20px; }
+	.heightbg1 {
+		background:#ff0000;
+		width: 100%;
+		position: relative;
+		height: 6px;
+		margin-top: 0px;
+	}
+	.vietsteel-block .function-btn {
+		background:rgba(0, 217, 255, 0.34);
+	}
+	.bg-news-item {
+		background-image:none;
+		background-color:#1b778c;
+		display:inline-block;
+		height:auto;
+		width:100%;
+		padding:10px 0px;
+	}
+	.icon-socail {
+		padding-top:5px;
+		padding-left: 50px;
+	}
+	.xemthem-news {
+		padding-top: 5px;
+	}
+	.footercall{ display:block; }
+	.footercall  a{ margin-top:5px; float:left; text-decoration:none;}
+	.giacongbox_ctl{ display:none; }
+	.giacongbox_mobi{ display:block; }
+	.title-thietkehome, .title-thietkehome1{ display:block; float:none;}
+	.more-xem a{text-decoration:none; color:#000; }
+	.more-xem{ text-align:center; }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.headertop-i, .searchhome, .mainright, .headerFlowus, .baogiaheader{ display:none;}
+	.headertop {
+		padding-left: 0px;
+	}
+	.icon-language {
+		top: 25px;
+		right:50px;
+	}
+	header{
+		background-color:#1b778c;
+		background-image:none;
+		height:65px;
+	}
+	.logo{ text-align:left; margin-top:15px; }
+	.logo img{ height:40px;  }
+	
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		padding:0px 0 0;
+	}
+	.nav-list {
+		display:none;
+	}
+	.nav-item {
+		width:100%;
+		float:none;
+	}
+	.nav-item > a {
+		padding:15px;
+		background:#049e75;
+		border-bottom:1px solid #ccc;
+		border-right:none;
+		color:#fff;
+	}
+	.nav-click {
+		display:block;
+	}
+	.nav-mobile-open {
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		-moz-border-radius:5px 5px 0 0;
+	}
+	.nav-item:hover .nav-submenu {
+		display:none;
+	}
+	.nav-submenu {
+		position:static;
+		width:100%;
+	}
+	.nav-submenu-item { float:none;}
+	.nav-submenu-item a { background:#049e75; border-bottom:1px solid #ccc; color:#fff; padding:15px;}
+	.nav-item a.active {
+		border-bottom:1px solid #ccc;
+		color: #fff;
+	}
+
+	.banner{ display:inline-block; width:100%;}
+	.about-cty {
+		float: none;
+		width: 100%;
+		margin-top:30px;
+	}
+	.title-about1{
+		float: none;
+		width: 100%;
+	}
+	.about-img{ margin-top:30px; }
+	/*.title-about h5 {
+		font-size: 5vw;
+	}
+	.about-cty .about-cty-n {
+		font-size: 5vw;
+	}*/
+	.about-img iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.footer-row1{ padding-top:40px;}
+	.chatluonghome {
+		padding: 50px 0px;
+	}
+	.chatluonghome-title:before {
+		width: 100%;
+		height: 2px;
+		top: 50px;
+		left:0px;
+	}
+	.chatluonghome-title {
+		font-size: 24px;
+	}
+	.chatluonghome-2 {
+		font-size: 30px;
+	}
+	.title-thietkehome span {
+		font-size: 26px;
+	}
+	.title-thietkehome:before {
+		height: 40px;
+	}
+	.cacdongmay-bg {
+		height: 50px;
+		top: -15px;
+		left: 0px;
+	}
+	.margin-top .wrapper__inner {
+		padding: 0em 0em 5em;
+	}
+	.title1-chetaohome h5 {
+		font-size:25px;
+	}
+	.title1-chetaohome:before {
+		height: 45px;
+		top: 0px;
+	}
+	.heightbg {
+		height: 20px;
+		margin-top: -20px;
+	}
+	.about-note {
+		width: 100%;
+	}
+	.title-name .title-ine {
+		padding: 0px 20px 0px 20px;
+	}
+	.h1category {
+		font-size:6vw;
+	}
+	.contentdetail{ margin-top:20px; }
+	.fixed {
+		width: 92%!important;
+	}
+	.vietsteel-item {
+		height: 270px;
+		margin-bottom:20px;
+		float:left;
+		width:50%;
+	}
+	.xemthem-news {
+		padding-top: 30px;
+	}
+	.doitac-col{ text-align:center; float:left; width:50%; height:220px; }
+	.title-about h5{
+		font-size:30px;
+	}
+	.maspgoogle iframe {
+		width: 100%;
+		height: 300px;
+	}
+	.contact-tt{ margin-top:20px; }
+	.heightbg1 {
+		background:#ff0000;
+		width: 100%;
+		position: relative;
+		height: 6px;
+		margin-top: 0px;
+	}
+	.vietsteel-block .function-btn {
+		background:rgba(0, 217, 255, 0.34);
+	}
+	.bg-news-item {
+		background-image:none;
+		background-color:#1b778c;
+		display:inline-block;
+		height:auto;
+		width:100%;
+		padding:10px 0px;
+	}
+	.icon-socail {
+		padding-top:5px;
+		padding-left: 50px;
+	}
+	.xemthem-news {
+		padding-top: 5px;
+	}
+	.nangluc-bottom-box{ float:left; width:50%; height:450px; }
+	.news-item{ float:left; width:50%; }
+	.giacongbox_ctl{ display:none; }
+	.giacongbox_mobi{ display:block; }
+	.title-thietkehome, .title-thietkehome1{ display:block; float:none;}
+	.more-xem a{text-decoration:none; color:#000; }
+	.more-xem{ text-align:center; margin-top:20px; }
+}
+	
+
+

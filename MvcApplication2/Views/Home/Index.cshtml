@@ -1,0 +1,155 @@
+﻿@model IEnumerable<MvcApplication2.Models.GiaCongXuongMutilTableDetail>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //if(Session["MaCauHinh"] == null)
+    //{
+    //    Response.Redirect("/Login/Index");
+    //}
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    @* dua len web thi chay lai duong dan tren *@
+<base href="./" />
+
+<title>CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT</title>
+@*<meta name="description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..."/>
+<link rel="canonical" href="https://vietson.com.vn/" />
+<meta name="keywords" content=""/>*@
+<meta name="author" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" name="generator" />
+<meta content="index,follow" name="googlebot" />
+<meta name="copyright" content="Copyright Â© 2018 CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="geo.placename" content="291 Hoàng Sa - Tân Định - Quận 1 - TPHCM" />
+<meta name="geo.region" content="VN - HCM" />
+<meta name="geo.position" content="10.819206,106.633778" />
+<meta name="ICBM" content="10.819206,106.633778" />
+<meta name="DC.title" lang="vi" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta name="DC.creator" content="Phan Thanh Hy" />
+<meta name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" content="Sat, 11 Jul 2020 13:36:00 +0700" />
+<meta name="DC.identifier" scheme="DCTERMS.URI" content="" />
+<link rel="DCTERMS.replaces" hreflang="vi" href="" />
+<meta name="DCTERMS.abstract" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta name="DC.format" scheme="DCTERMS.IMT" content="text/html" />
+<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT" />
+<meta property="og:description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,..." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="" />
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:title" content="CÔNG TY TNHH MÁY VÀ SẢN PHẨM THÉP VIỆT">
+<meta name="twitter:description" content="VIETSTEEL là chuyên gia đứng đầu tại Việt Nam thiết kế, chế tạo, lắp đặt tất cả các dòng máy cán tôn, máy uốn tôn, máy xả băng, máy cắt tôn theo chiều dài,...">
+<meta name="twitter:image" content="">
+@*<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>*@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="~/Ases/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="~/Ases/styles/owl-carousel.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/jquery.fancybox.min.css">
+<link href="~/Ases/styles/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/slick.css"/>
+<link rel="stylesheet" type="text/css" href="~/Ases/styles/slick-theme.css"/>
+
+<link href="~/Ases/styles/main.css" rel="stylesheet" type="text/css" />
+<link href="~/Ases/styles/menu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="~/Ases/js/jquery.js"></script>
+<script type="text/javascript" src="~/Ases/js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="~/Ases/js/flaunt.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130206550-1"></script>
+
+
+<style>
+    /*#body {
+            background-image: url(../Images/HinhNen.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+           }*/
+    table, th, td {
+      border: solid 1px lightgray;
+    }
+</style>
+</head>
+@*<body>*@
+@if(Model !=null)
+{
+<body>
+    <div class="container" style="width:98%;margin-top:0.5%">
+        <div style="width:50%; height:20%; margin-top:0.5%; background:url(../Images/thiet-ke-che-tao-1.jpg); background-repeat:no-repeat">
+            <h2 style="font-style:italic; color:white">HẠNG MỤC GIA CÔNG</h2>
+        </div>
+        <div>&nbsp;</div>
+        <table class="table">
+        <tr style="text-align:center;vertical-align: middle; background-color:#99CCFF">
+            <th>Mã máy</th>
+            <th>Tên máy</th>
+            <th>Mã hạng mục</th>
+            <th>Tên hạng mục</th>
+            <th>DKN</th>
+            <th>DKT</th>
+            <th>DAI</th>
+            <th>Dài</th>
+            <th>Rộng</th>
+            <th>Dày</th>
+            <th>ĐVT</th>
+            <th>SL</th>
+            <th>Ngày HTDK</th>
+            <th>Ngày lập</th>
+            <th>Người lập</th>
+            <th>Mã máy GC</th>
+            <th>Tên máy GC</th>
+            <th>Số giờ TT</th>
+            <th>chuyển</th>
+            <th></th>
+        </tr>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @foreach (var item1 in item.gcxChiTiets)
+                    { 
+                        <td>@item1.MaMay</td>
+                        <td>@item1.TenMay</td>
+                        <td>@item1.MaHangMuc</td>   
+                        <td>@item1.TenHangMuc</td> 
+                        <td>@item1.DKN</td>
+                            
+                        <td>@item1.DKT</td>
+                        <td>@item1.DAI</td>
+                        <td>@item1.Dai2</td>   
+                        <td>@item1.Rong2</td> 
+                        <td>@item1.Day2</td>
+                        <td>@item1.DVT</td>  
+                        <td>@item1.SoLuong</td> 
+                        <td>@item1.NgayHoanThanhDuKien.ToString("dd-MM-yyyy")</td>
+                            
+                        <td>@item1.NgayLapGCX.ToString("dd-MM-yyyy")</td>
+                        <td>@item1.NguoiLapVTHT</td>   
+                    }
+                    <td>@item.MaMayGC</td>
+                    <td>@item.TenMayGC</td>
+                    @*<td><input type="text" id="SoGio" name="fname" value=""></td>*@
+                    @*@using (Html.BeginForm("SaveRecord", "Test", FormMethod.Post))
+    {}*@
+                    <td><a type="button" data-toggle="modal" href="@Url.Action("Index","ChiTiet")">Lập</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+</body>
+}
+else
+{
+    <body style="background:url(../Images/HinhNen.png)"></body>
+}
+</html>
